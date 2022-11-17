@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #31323b;
+}
+
+:root {
+    --text: #ffff;
+}
+
+body {
+    height:100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+li, a, button, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #ffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+h3 {
+    font-size: 1cm;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.jetbrain {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.white-text {
+    color: var(--text);
+}
+
+/* CLASSES FOR CRADIENT STYLE TEXT*/
+.gr-2 {
+    background-image: linear-gradient(-45deg,#32c5ff,#b620e0,#f7b500);
+}
+
+.gradient {
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .tld {
+    font-size: 0.7rem;
+} */
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: rgba(36,37,42, 1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;   
+}
+
+button:hover {
+    background-color: rgba(36,37,55, 0.6);
+}
+
+
+#hello {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 6px 0; /* top bottom margins are 6 px, left right are 0*/
+
+}
+
+
+/* HELLO BANNTER */
+.info {
+    text-align: center;
+    width: 100%;
+    margin: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+#snow-animation-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}

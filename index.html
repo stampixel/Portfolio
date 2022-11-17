@@ -4,12 +4,59 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>bourrasque</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles.css">
+        <!-- Set meta data so it works well -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="snow.js"></script>
+        <!-- <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script> -->
     </head>
-    <body>
+    <body id="body">
+        <div class="root">
+            <header>
+                <!-- <img class="logo" width="30" height="30" src="images/egurl.jpg" alt="logo"> -->
+                <h3 class="jetbrain">bourras<span class="tld gr-2 gradient">que</span></h3>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#"><button>Home</button></a></li>
+                        <li><a href="#"><button>Repos</button></a></li>
+                        <li><a href="#"><button>Contact</button></a></li>   
+
+                    </ul>
+                </nav>
+                <!-- <a class="cta" href="#"><button>Contact</button></a> -->
+            </header>
+            <!-- <img src="https://github-readme-stats.vercel.app/api?username=stampixel&show_icons=true&theme=gotham" alt="github stats" width="45%"/> -->
+
+            <div class="main container">
+                <div class="info">
+                    <h3 class="white-text" id="hello">Hi, I'm bourrasque</h3>
+                    <h1 class="white-text">
+                        Full-stack <span class="gr-2 gradient"> Developer </span>
+                        <br>and 
+                        <span class="gr-2 gradient">Machine Learning</span> Enthusiast
+                    </h1>
+                    
+                </div>
+
+            </div>
+        
+        </div>
         
     </body>
+    <div id="snow-animation-container"></div> <!--NEEDS TO BE AT THE END OF THE FILE-->
 </html>
