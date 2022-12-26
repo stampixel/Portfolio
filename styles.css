@@ -1,48 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #31323b;
 }
 
 :root {
     --text: #ffff;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+
 body {
-    height:100%;
+    background: #151621;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+
+
+/* body {
     margin: 0;
     overflow-x: hidden;
-}
+    background-color: #31323b;
+} */
 
 html {
     scroll-behavior: smooth;
 }
 
-
-
 li, a, button, h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
-    font-size: 16;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
     color: #ffff;
     text-decoration: none;
 }
 
+.root {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1950px;
+}
+
 header {
+    /* position: absolute; */
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    font-size: 24px;
+    height: 7%;
 }
 
 h3 {
     font-size: 1cm;
     font-weight: bold;
+}
+
+header h3 {
+    font-size: 20px;
 }
 
 .container {
@@ -52,19 +77,11 @@ h3 {
 }
 
 
-.jetbrain {
-    font-family: 'JetBrains Mono', monospace;
-}
-
 .white-text {
     color: var(--text);
 }
 
 /* CLASSES FOR CRADIENT STYLE TEXT*/
-.gr-2 {
-    background-image: linear-gradient(-45deg,#32c5ff,#b620e0,#f7b500);
-}
-
 .gradient {
     background-size: 200% 200%;
     background-clip: text;
@@ -72,10 +89,18 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-/* .tld {
-    font-size: 0.7rem;
-} */
+.gr-1 {
+    background-image: linear-gradient(-45deg,#f7b500,#b620e0,#32c5ff);
+}
 
+.gr-2 {
+    background-image: linear-gradient(-45deg,#32c5ff,#b620e0,#f7b500);
+}
+
+
+
+
+/* NAV BAR */
 .nav__links {
     list-style: none;
 }
@@ -89,9 +114,9 @@ h3 {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover {
+/* .nav__links li a:hover {
     color: #0088a9;
-}
+} */
 
 button {
     padding: 15px 25px;
@@ -107,24 +132,78 @@ button:hover {
 }
 
 
-#hello {
+
+/* HELLO BANNER */
+.info {
+    text-align: center;
+}
+
+.hello {
     font-size: 30px;
     font-weight: 400;
     margin: 6px 0; /* top bottom margins are 6 px, left right are 0*/
 
 }
 
-
-/* HELLO BANNTER */
-.info {
-    text-align: center;
+.main {
+    height: 80%;
     width: 100%;
-    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    margin-bottom: 25%;
+    margin-top: 12%;
+}
+
+.main-info {
+    font-size: 54px;
+    font-family: var(--font-family-sans-serif);
 }
 
 
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 125px;
+}
 
+/* PROJECTS */
+.project-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+}
+
+.project {
+    text-align: left;
+    width: calc(50% - 34px);
+    background: rgba(26,28,47, 0.5);
+    border-radius: 15px;
+    margin: 12px auto;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 transparent,0 0 #0000, 0 0 transparent, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding-top: 1em;
+    padding-left: 1em;
+
+}
+
+.proj-info {
+    /*margin: 25px;*/
+
+}
+
+hr {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 
 
