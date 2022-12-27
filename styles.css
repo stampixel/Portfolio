@@ -15,15 +15,13 @@
 }
 
 
-
 body {
     background: #151621;
     margin: 0;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     height: 100%;
-  }
-
+}
 
 
 /* body {
@@ -38,7 +36,7 @@ html {
 
 li, a, button, h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins', serif;
-    font-size: 16px;
+    /*font-size: 16px;*/
     color: #ffff;
     text-decoration: none;
 }
@@ -90,14 +88,12 @@ header h3 {
 }
 
 .gr-1 {
-    background-image: linear-gradient(-45deg,#f7b500,#b620e0,#32c5ff);
+    background-image: linear-gradient(-45deg, #f7b500, #b620e0, #32c5ff);
 }
 
 .gr-2 {
-    background-image: linear-gradient(-45deg,#32c5ff,#b620e0,#f7b500);
+    background-image: linear-gradient(-45deg, #32c5ff, #b620e0, #f7b500);
 }
-
-
 
 
 /* NAV BAR */
@@ -120,17 +116,16 @@ header h3 {
 
 button {
     padding: 15px 25px;
-    background-color: rgba(36,37,42, 1);
+    background-color: rgba(36, 37, 42, 1);
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;   
+    transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(36,37,55, 0.6);
+    background-color: rgba(36, 37, 55, 0.6);
 }
-
 
 
 /* HELLO BANNER */
@@ -171,39 +166,61 @@ main {
 /* PROJECTS */
 .project-parent {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.projects-info p {
+    color: #9497A1;
+
+
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 70%;
+    width: 80%;
 }
 
 .project {
-    text-align: left;
-    width: calc(50% - 34px);
-    background: rgba(26,28,47, 0.5);
-    border-radius: 15px;
-    margin: 12px auto;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 transparent,0 0 #0000, 0 0 transparent, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    padding-top: 1em;
-    padding-left: 1em;
+    /*padding: 2em;*/
 
+
+    margin-top: 3em;
+    width: 100%;
+
+    display: inline-block;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
+
+
+
+
+    background: #1A1C2F;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 transparent, 0 0 #0000, 0 0 transparent, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+    max-height: 300px;
 }
 
 .proj-info {
-    /*margin: 25px;*/
-
+    width: 40%;
+    margin: 2em;
 }
 
-hr {
-    margin-left: 1em;
-    margin-right: 1em;
+.project img {
+    display: block;
+    float: right;
+    /*height: 10px;*/
+    /*width: auto;*/
+    object-fit: contain;
+    height: 300px;
 }
+
+
 
 
 
@@ -211,8 +228,8 @@ hr {
 
 
 #snow-animation-container {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
