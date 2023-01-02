@@ -7,13 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Set meta data so it works well -->
+    <!-- Set metadata so it works well -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
             integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="snow.js"></script>
     <script src="https://kit.fontawesome.com/8771781f50.js" crossorigin="anonymous"></script>
+
+
+    <meta content="bourr4sque.dev" property="og:title"/>
+    <meta content="Welcome to my website!" property="og:description"/>
+    <meta content="https://bourr4sque.dev" property="og:url"/>
+    <meta content="src/info.png" property="og:image"/>
+    <meta content="#1A1C2F" data-react-helmet="true" name="theme-color"/>
+
+<!--    <meta name="twitter:card" content="summary_large_image">-->
+
+    <link rel="icon" href="src/logo.png">
 </head>
 
 
@@ -25,20 +36,23 @@
         <!--        <h3 class="">bourras<span class="tld gr-2 gradient">que</span></h3>-->
         <nav>
             <ul class="nav-links"> <!-- Make buttons hidden if screen to small-->
-                <li><a href="#">
-                    <button>Home</button>
+                <li><a href="#aboutMe">
+                    <button>About</button>
                 </a></li>
-                <li><a href="#">
-                    <button>Repos</button>
+                <li><a href="#projects">
+                    <button>Projects</button>
+                </a></li>
+                <li><a href="#contact">
+                    <button>Contact</button>
                 </a></li>
             </ul>
         </nav>
         <!--     <a class="cta" href="#"><button>Contact</button></a>-->
     </header>
+
     <div id="snow-animation-container"></div>
 
-
-    <main class="fullpage">
+    <main class="full-page">
         <div class="hero">
             <!--        <div class="main container">-->
             <div class="info">
@@ -57,18 +71,20 @@
             </div>
         </div>
 
-        <div class="about-me">
+        <div class="about-me" id="aboutMe">
             <h1># About_me</h1>
             <p> &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my website!</p>
             <div class="about-me-info">
                 <div class="text">
-                    <p>I am currently interested in getting an internship as it is one of the
-                        best
-                        ways of expanding my knowledge as a programmer, as well as gaining experience in the real
-                        workforce.
-                        Feel free to contact me through email or on my LinkedIn if such opportunities are available.
-                        Thank
-                        you.</p>
+                    <p>My name is Kevin and I am a programmer with a passion for solving problems and creating software.
+                        In my free time, I like to participate in online coding challenges and hackathons
+                        to keep my skills sharp, as well as meeting new people and networking. I am always looking for
+                        new opportunities to learn and gain knowledge.</p>
+
+                    <p>Making projects is also one of my hobbies, I find creating something new and innovative
+                        fulfilling. Turning ideas into pieces of software that can be beneficial in the real world gives
+                        me a great sense of accomplishment, encouraging me to perpetually continue the cycle.
+                    </p>
                 </div>
                 <div id="image">
                     <img src="test.png">
@@ -78,7 +94,7 @@
 
         <hr>
 
-        <div class="project-parent">
+        <div class="project-parent" id="projects">
             <div class="hashtag">
                 <h1># My Projects</h1>
                 <p> &nbsp; &nbsp; &nbsp; &nbsp; Behold, my stuff...</p>
@@ -135,7 +151,7 @@
 
                 <div class="more">
                     <a href="https://github.com/stampixel">
-                        <button>But wait, there's more!</button>
+                        <button>But wait, there's more...</button>
                     </a>
                 </div>
             </div>
@@ -143,13 +159,38 @@
 
         <hr>
 
-        <div class="hashtag">
-            <h1># Interests</h1>
-            <p> &nbsp; &nbsp; &nbsp; &nbsp; I am currently interested in getting an internship as it is one of the best
-                ways of expanding my knowledge as a programmer, as well as gaining experience in the real workforce.
-                Feel free to contact me through email or on my LinkedIn if such opportunities are available. Thank
-                you.</p>
+        <div class="interests-parent" id="contact">
+            <div class="hashtag">
+                <h1># Interests</h1>
+                <p> &nbsp; &nbsp; &nbsp; &nbsp; Current interests...</p>
+            </div>
+
+            <div class="interests-body">
+
+                <p> &nbsp; &nbsp; &nbsp; &nbsp; One thing I am currently pursuing is obtaining an internship position in
+                    a field related to programming and computers. Being able to gain practical experience in the field
+                    as well as applying the things I have learned so far to real-world projects would be exciting. An
+                    internship position would also give me the chance to work with experienced professionals and learn
+                    from them, as well as making connections and building my network. I believe that an internship would
+                    be an invaluable opportunity for me to get my foot in the door and start my career as a
+                    programmer.</p>
+
+                <div class="more">
+                    <button class="email" type="submit" name="completed" value="" alt="Click to copy!"></button>
+                </div>
+            </div>
         </div>
+
+
+        <!--        <div class="hashtag">-->
+        <!--            <h1># Interests</h1>-->
+        <!--            <p> &nbsp; &nbsp; &nbsp; &nbsp; I am currently interested in getting an internship as it is one of the-->
+        <!--                best-->
+        <!--                ways of expanding my knowledge as a programmer, as well as gaining experience in the real workforce.-->
+        <!--                Feel free to contact me through email or on my LinkedIn if such opportunities are available. Thank-->
+        <!--                you.</p>-->
+        <!--        </div>-->
+
 
     </main>
 </div>

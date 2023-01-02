@@ -23,16 +23,8 @@ body {
     margin: 0 0 100px;
 }
 
-
-/* body {
-    margin: 0;
-    overflow-x: hidden;
-    background-color: #31323b;
-} */
-
 html {
     scroll-behavior: smooth;
-
 }
 
 li, a, button, h1, h2, h3, h4, h5, h6, p {
@@ -46,6 +38,7 @@ li, a, button, h1, h2, h3, h4, h5, h6, p {
     margin-right: auto;
     max-width: 1950px;
 }
+
 
 header {
     width: 100%;
@@ -67,17 +60,11 @@ header h3 {
     font-size: 20px;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 .white-text {
     color: var(--text);
 }
 
+/*Used for color gradients*/
 .gradient {
     background-size: 200% 200%;
     -webkit-background-clip: text;
@@ -100,8 +87,9 @@ header h3 {
 
 .nav-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
+
 
 button {
     padding: 15px 25px;
@@ -114,6 +102,7 @@ button {
 button:hover {
     background-color: rgba(36, 37, 55, 0.6);
 }
+
 
 .main {
     display: flex;
@@ -133,6 +122,8 @@ main {
     max-width: 1500px;
 }
 
+
+/*FRONT PAGE*/
 .info {
     text-align: center;
 }
@@ -144,14 +135,12 @@ main {
 }
 
 .hero {
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     /*Why does % not work here but vh or em work*/
     height: calc(100vh - 300px);
-    /*margin-top: -7%;*/
 }
 
 .main-info {
@@ -178,18 +167,8 @@ main {
     color: #ffff;
 }
 
-.fullpage {
-    /*width: 80%;*/
-}
 
-/* PROJECTS */
-.project-parent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
+/*ABOUT ME*/
 .hashtag {
     width: 80%;
     align-self: center;
@@ -202,17 +181,16 @@ main {
 }
 
 .about-me {
-    max-width: 90%;
+    max-width: 85%;
     font-size: clamp(14px, 2vw, 18px);
     align-self: center;
 }
 
 .about-me p {
     color: #9497A1;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     font-size: clamp(14px, 2vw, 18px);
 }
-
 
 .about-me-info {
     margin-top: 2em;
@@ -221,16 +199,26 @@ main {
 
 #image {
     width: 50%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: auto;
 }
 
 .text {
     width: 50%;
 }
 
-.about-me-info img {
-    float: right;
+/*.about-me-info img {*/
+/*    float: right;*/
+/*}*/
+
+
+/*PROJECTS*/
+.project-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .projects {
@@ -258,11 +246,6 @@ main {
 .proj-info {
     width: 40%;
     margin: 2em;
-}
-
-
-.proj-info {
-    /*font-size: 1.5vw;*/
     font-size: clamp(12px, 2vw, 22px);
 }
 
@@ -275,28 +258,54 @@ main {
 
 img {
     width: 35em;
-    float: right;
     max-width: 100%;
-    height: auto;
+    /*height: auto;*/
 }
 
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+    color: rgba(36, 37, 42, 1);
 }
 
-/*.more {*/
-/*    margin: auto;*/
-/*    background-color: rgba(36, 37, 42, 1);*/
-/*    padding: 1em;*/
-/*    cursor: pointer;*/
-/*}*/
 
+/*INTERESTS*/
+/*FIGURE OUT WHY THE BOTTOM ON NEEDS WIDTH TO DO MARGIN AUTO BUT THE TOP ONE DOESNT*/
 .more {
+    display: block;
     margin: auto;
+    width: fit-content;
 }
 
+.interests-parent {
+    width: 80%;
+    align-self: center;
+}
+
+.interests-parent p {
+    font-size: clamp(14px, 2vw, 18px);
+    margin-bottom: 2em;
+}
+
+
+.email {
+    font-size: 0;
+}
+
+.email::after {
+    font-size: 14px;
+}
+
+.email::after {
+    content: "Shoot me an Email!";
+}
+
+.email:hover::after {
+    content: "stampixel.t@gmail.com";
+}
+
+/*AFTER YOU CLICK, BUTTON DISPLAYS "COPIED TO CLIPBOARD"*/
 
 @media screen and (max-width: 650px) {
     /*main {*/
@@ -306,28 +315,22 @@ hr {
         display: none;
     }
 
-
     .project-parent {
         width: 100%;
     }
 
-
     .project {
         flex-direction: column;
-        /*width: 100%;*/
     }
 
     .proj-info {
         width: auto;
         font-size: 15px;
     }
-
 }
-
 
 #snow-animation-container {
     position: fixed;
-    width: 100%;
+    /*width: 100%;*/
     /*height: 100%;*/
-    /*overflow: hidden;*/
 }
