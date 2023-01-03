@@ -266,7 +266,9 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
-    color: rgba(36, 37, 42, 1);
+    background-color: rgba(36, 37, 42, 1);
+    border: none;
+    height: 2px;
 }
 
 
@@ -315,6 +317,20 @@ hr {
         display: none;
     }
 
+    .about-me-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    #image {
+        width: 35em;
+        max-width: 100%;
+    }
+
     .project-parent {
         width: 100%;
     }
@@ -326,6 +342,10 @@ hr {
     .proj-info {
         width: auto;
         font-size: 15px;
+    }
+
+    .email::after {
+        content: "stampixel.t@gmail.com";
     }
 }
 
