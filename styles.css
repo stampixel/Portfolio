@@ -246,7 +246,7 @@ main {
 .proj-info {
     width: 40%;
     margin: 2em;
-    font-size: clamp(12px, 2vw, 22px);
+    font-size: clamp(12px, 2vw, 17px);
 }
 
 .images {
